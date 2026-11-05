@@ -20,3 +20,6 @@
   .cat-memories { margin-top: 30px; padding-top: 25px; }
   .cat-gallery { grid-template-columns: 1fr; gap: 28px; }
 }
+
+/* Travel story entry */
+.travel-feature{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:48px;align-items:center;background:#efeadd;border-radius:22px;overflow:hidden}.travel-photo{display:block}.travel-photo img{display:block;width:100%;height:480px;object-fit:cover;object-position:center 48%}.travel-copy{padding:35px 45px 35px 0}.travel-copy h3{font-size:clamp(25px,3vw,36px);line-height:1.5;margin:15px 0}.travel-copy p{line-height:1.9}.travel-copy .button{margin-top:18px}@media(max-width:700px){.travel-feature{grid-template-columns:1fr;gap:0}.travel-photo img{height:360px}.travel-copy{padding:26px}.site-header nav{flex-wrap:wrap}}
