@@ -7,3 +7,6 @@
 h1,h2{font-weight:700;letter-spacing:.02em}h1 span{font-style:normal;transform:none}.brand{font-weight:600;letter-spacing:-.02em}blockquote{font-weight:600}
 
 @font-face{font-family:Huninn;src:url("fonts/jf-openhuninn-2.1.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}body{font-family:Huninn,"Noto Sans TC",sans-serif;font-synthesis:none}h1,h2,h1 span,.brand,.brand span,.number,nav span,.gallery figcaption span,blockquote{font-family:inherit;font-weight:400;font-style:normal}h1{font-size:clamp(40px,5.4vw,68px);letter-spacing:.02em}h2{font-size:30px}.prose{font-size:18px;line-height:2}.gallery figcaption{font-size:14px}.prose p{margin-bottom:24px}@media(max-width:700px){h1{font-size:43px}h2{font-size:25px}.prose{font-size:17px}}
+
+/* Landscape travel covers */
+.hero .cover img{height:auto;aspect-ratio:4/3;object-position:center;}
