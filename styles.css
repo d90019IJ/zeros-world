@@ -6,3 +6,17 @@
 @media(max-width:360px){.hero h1{font-size:39px}.hero .actions{display:grid}.identity{font-size:11px}.status{white-space:normal}.social-item{gap:10px;padding:17px 13px}.social-mark{width:27px}.social-item h3{font-size:18px}.brand-tags{display:block}.brand-tags span{display:block}.experience-hero h1{font-size:30px}}
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}.button,.text-link,nav a{transition:background .18s,color .18s}.hero-copy{animation:arrive .45s ease both}@keyframes arrive{from{opacity:.3;transform:translateY(8px)}to{opacity:1;transform:none}}}
 
+
+/* 關於我的生活插畫 */
+.cat-memories { margin-top: 48px; padding-top: 32px; border-top: 1px solid var(--line); }
+.cat-memories > h3 { font-size: 25px; margin-bottom: 24px; }
+.cat-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.cat-gallery figure { min-width: 0; }
+.cat-gallery img { display: block; width: 100%; height: auto; aspect-ratio: 4 / 3; border: 1px solid var(--line); border-radius: 10px; }
+.cat-gallery figcaption { padding-top: 14px; }
+.cat-gallery strong { font-size: 17px; font-weight: 400; color: var(--coffee); }
+.cat-gallery p { font-size: 13px; margin-top: 7px; }
+@media(max-width:760px) {
+  .cat-memories { margin-top: 30px; padding-top: 25px; }
+  .cat-gallery { grid-template-columns: 1fr; gap: 28px; }
+}
