@@ -1,7 +1,7 @@
 /* 公開設定：不放私人資料、金鑰或未公開草稿。網址留空就維持未開放。
  * 照片放在 images/，再填入相對路徑及真實照片描述。 */
 window.ZERO_CONFIG = {
-  portrait: { src: "", alt: "Zero 的個人照片" },
+  portrait: { src: "images/zero-portrait-v1.webp", alt: "Zero 的漫畫風肖像，戴著墨鏡與口罩、穿橄欖綠上衣" },
   socials: [
     { name: "Instagram", note: "生活與日常", mark: "◎", url: "" },
     { name: "Threads", note: "想法與交流", mark: "@", url: "" },
