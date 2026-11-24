@@ -44,7 +44,12 @@
   badge.onload = () => status.replaceChildren(badge);
   badge.onerror = () => { status.textContent = "計數暫時無法載入"; };
 
-  counter.append(label, status);
+  const privacyLink = document.createElement("a");
+  privacyLink.href = publicPath + "privacy.html";
+  privacyLink.textContent = "隱私與瀏覽統計";
+  privacyLink.style.cssText = "font-size: 12px; text-decoration: underline; text-underline-offset: 3px;";
+
+  counter.append(label, status, privacyLink);
   footer.insertAdjacentElement("afterend", counter);
   badge.src = badgeUrl;
 })();
