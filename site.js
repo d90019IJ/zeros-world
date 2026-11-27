@@ -30,7 +30,17 @@
       copy.append(element("h3", "", social.name), element("p", "", social.note));
       node.append(mark, copy);
       const url = httpsUrl(social.url);
-      node.append(url ? link(url, "前往 " + social.name) : element("span", "status", "連結待補"));
+      if (url) {
+        const socialLink = link(url, "前往 " + social.name);
+        const platform = String(social.name).trim().toLowerCase();
+        if (["instagram", "threads", "line"].includes(platform)) {
+          socialLink.dataset.socialPlatform = platform;
+          socialLink.dataset.linkLocation = "home_connect";
+        }
+        node.append(socialLink);
+      } else {
+        node.append(element("span", "status", "連結待補"));
+      }
       return node;
     }));
     const note = document.querySelector("[data-social-note]");
